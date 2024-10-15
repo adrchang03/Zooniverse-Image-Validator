@@ -122,7 +122,8 @@ def find_original_classification(filename):
             )
     return original_classifications
 
-# Function to display the original classifications under the image in aligned columns
+
+# Function to display the original classifications under the image
 def display_original_classifications(classifications):
     # Clear previous text
     original_info_label.config(text="")
@@ -142,8 +143,6 @@ def display_original_classifications(classifications):
     
     # Display the formatted text in the label using a fixed-width font
     original_info_label.config(text=info_text, font=("Courier", 11))
-
-
 
 
 
@@ -203,6 +202,7 @@ def find_image_in_subfolders(filename):
     elapsed_time = time.time() - start_time
     print(f"Could not find {filename}. Search took {elapsed_time:.2f} seconds.")  # Debug message
     return None
+
 
 # Count number of rows in column A
 # Yes I know what it's called.
