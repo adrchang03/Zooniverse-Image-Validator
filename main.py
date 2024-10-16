@@ -52,7 +52,7 @@ choose_window_size()
 
 # Initialize the main window after choosing the size
 window = tk.Tk()
-window.title("Zooniverse Validator v.1.07")
+window.title("Zooniverse Validator v.1.08")
 window.geometry(window_size)  # Set the window size based on user selection
 
 # Function to choose folder and Excel file
@@ -514,11 +514,11 @@ species2_dropdown.grid(row=2, column=1, padx=0, pady=5, sticky="w")  # Positione
 
 # Create dropdowns for species counts with predefined options
 species1_count_var = tk.StringVar(value="NONE")
-species1_count_dropdown = ttk.Combobox(window, textvariable=species1_count_var, values=count_options, width=20, state="readonly")
+species1_count_dropdown = ttk.Combobox(window, textvariable=species1_count_var, values=count_options, width=20, state="normal")
 species1_count_dropdown.grid(row=1, column=3, padx=0, pady=5, sticky="w")
 
 species2_count_var = tk.StringVar(value="NONE")
-species2_count_dropdown = ttk.Combobox(window, textvariable=species2_count_var, values=count_options, width=20, state="readonly")
+species2_count_dropdown = ttk.Combobox(window, textvariable=species2_count_var, values=count_options, width=20, state="normal")
 species2_count_dropdown.grid(row=2, column=3, padx=0, pady=5, sticky="w")
 
 
