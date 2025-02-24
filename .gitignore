@@ -1,0 +1,25 @@
+# Ignore build and dist folders
+build/
+dist/
+
+# Ignore .spec files
+*.spec
+
+# Ignore test folders
+images/
+excel/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment files
+.env
+venv/
+env/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
